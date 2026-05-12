@@ -8,7 +8,7 @@ import { TagLinks } from "./tag-links/tag-links";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, TagsH, TagParagrafo, TagFormatacao, TagListas, TagLinks],
+  imports: [RouterOutlet, TagsH, TagParagrafo, TagListas, TagLinks],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

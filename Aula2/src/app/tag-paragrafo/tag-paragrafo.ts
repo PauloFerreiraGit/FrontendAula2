@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './tag-paragrafo.html',
   styleUrl: './tag-paragrafo.css',
 })
-export class TagParagrafo {}
+export class TagParagrafo {
+  numeros: Number[] = [1022121,2215151,35454,454154,554154,65515];
+}

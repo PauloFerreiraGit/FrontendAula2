@@ -1,1 +1,44 @@
-<p>tag-listas works!</p>
+<h1>Estas são as minhas Listas</h1>
+
+<p>Minha Lista Não Ordenada Estática</p>
+
+<ul>
+    <li>Nossa Linha 1 </li>
+    <li>Nossa Linha 2 </li>
+</ul>
+
+<p>Minha Lista Ordenada Estatica</p>
+<ol>
+    <li>Nossa Linha</li>
+    <li>Nossa Linha</li>
+    <li>Nossa Linha</li>
+</ol>
+
+
+<p><strong>Minha Lista não ordenada Dinâmica</strong></p>
+
+<ul>
+    @for (item of this.minhalista; track $index) {
+      <!-- interpolação no Angular é chamado de propertybind {{ }}  -->
+     <li>{{"minhalista:" + item.toLocaleUpperCase() }} </li>
+
+    }
+
+    
+</ul>
+
+
+
+<p>Minha Lista  ordenada Dinâmica</p>
+
+
+<ol>
+    @for (item of this.minhalista; track $index) {
+      <!-- interpolação no Angular é chamado de propertybind {{ }}  -->
+       <!-- a diferença entre a linha 23 e a linha 29  é que a string esta fora da interpolação -->
+     <li>"minhalista: " + ,{{item}}</li>
+
+    }
+
+    
+</ol>       
