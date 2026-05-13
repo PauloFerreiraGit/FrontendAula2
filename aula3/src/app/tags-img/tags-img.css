@@ -1,0 +1,10 @@
+/* quando eu uso uma classe eu preciso do PONTO */
+.image {
+    width: 50vw;
+   
+}
+ 
+/* quando eu uso uma tag eu não preciso do PONTO (.) */
+img {
+    width: 30%;    
+}

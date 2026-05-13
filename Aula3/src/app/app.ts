@@ -1,17 +1,15 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { TagH } from "./tag-h/tag-h";
-import { TagFormatacao } from "./tag-formatacao/tag-formatacao";
-import { TagLinks } from "./tag-links/tag-links";
-import { TagParagrafo } from "./tag-paragrafo/tag-paragrafo";
-import { TagListas } from "./tag-listas/tag-listas";
+import { TagsImg } from "./tags-img/tags-img";
+import { TagsSemanticas } from "./tags-semanticas/tags-semanticas";
+import { TagsVideo } from "./tags-video/tags-video";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, TagH, TagFormatacao, TagLinks, TagParagrafo, TagListas],
+  imports: [RouterOutlet, TagsImg, TagsSemanticas, TagsVideo],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('Aula3');
+  protected readonly title = signal('aula3');
 }
