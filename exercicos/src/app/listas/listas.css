@@ -1,0 +1,16 @@
+.caixa-listas {
+  background-color: #5287e9;   /* Cor de fundo */
+  padding: 20px;               /* Espaço interno */
+  border-radius: 10px;         /* Cantos arredondados */
+  border: 2px solid #04013a;      /* Borda suave */
+  width: 400px;                /* Largura da caixa */
+  margin-top: 20px;            /* Espaço acima */
+}
+
+ul, ol {
+  margin-left: 20px;           /* Afasta as listas da borda */
+}
+
+li {
+  margin-bottom: 5px;          /* Espaço entre itens */
+}

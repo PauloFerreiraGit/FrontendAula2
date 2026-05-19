@@ -1,0 +1,20 @@
+p {
+  font-weight: bold;
+  font-size: 50px;
+  color: #0cad3c;
+}
+
+h1 {
+  color: darkblue;
+}
+
+h2 {
+  color: #740505;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  color: #b70808;
+}
