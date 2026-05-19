@@ -1,7 +1,11 @@
-.video{
-
-    display: flex;
-    justify-content: center;
-    margin: 30px 0px;
-    
+.video {
+  position: absolute;
+  top: 800  px;
+  left: 100px;
+  width: 640px;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
 }
+

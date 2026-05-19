@@ -1,9 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Cabecalho } from "./cabecalho/cabecalho";
+import { Corpo } from "./corpo/corpo";
+import { Rodape } from "./rodape/rodape";
+import { Carrinho } from "./carrinho/carrinho";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Cabecalho, Corpo, Rodape, Carrinho],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
