@@ -1,0 +1,28 @@
+/* Estilo do título principal */
+.titulo-principal {
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilo da descrição */
+.descricao-video {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Container que centraliza o vídeo */
+.video-container {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  margin-top: 20px;
+}
+
+/* Ajuste do iframe para ser responsivo */
+.video-container iframe {
+  width: 560px;
+  height: 315px;
+  border-radius: 10px; /* opcional: cantos arredondados */
+}

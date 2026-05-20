@@ -8,10 +8,11 @@ import { Imagens } from "./imagens/imagens";
 import { Listas } from "./listas/listas";
 import { Paragrafo } from "./paragrafo/paragrafo";
 import { Texto } from "./texto/texto";
+import { Videos } from "./videos/videos";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Estruturas, Tabelas, Formularios, Links, Imagens, Listas, Paragrafo, Texto],
+  imports: [RouterOutlet, Estruturas, Tabelas, Formularios, Links, Imagens, Listas, Paragrafo, Texto, Videos],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -1,0 +1,22 @@
+/* Container geral do formulário */
+form {
+    display: flex;                 /* Ativa o Flexbox */
+    flex-direction: column;        /* Organiza os elementos na vertical */
+    gap: 15px;                     /* Espaço entre os inputs */
+    width: 350px;                  /* Largura fixa para o formulário */
+    margin: 20px auto;             /* Centraliza na página */
+    padding: 20px;                 /* Espaço interno */
+    background: #f5f5f5;           /* Fundo suave */
+    border-radius: 10px;           /* Bordas arredondadas */
+    box-shadow: 0 0 10px #ccc;     /* Sombra leve */
+}
+
+/* Estilo geral dos inputs */
+form input {
+    padding: 12px;                 /* Espaço interno */
+    border: 1px solid #ccc;        /* Borda cinza clara */
+    border-radius: 6px;            /* Bordas arredondadas */
+    font-size: 16px;               /* Tamanho do texto */
+    outline: none;                 /* Remove borda azul padrão */
+    transition: border-color cubic-bezier(0.755, 0.05, 0.855, 0.06);        /* Animação suave para a borda */
+}

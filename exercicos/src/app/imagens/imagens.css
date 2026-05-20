@@ -1,0 +1,26 @@
+.image-box {
+  border: 3px solid black; /* Borda à volta da caixa */
+  width: 30%; /* Largura da caixa (ajusta conforme quiseres) */
+  margin: 20px auto; /* Centraliza a caixa na página */
+  padding: 10px; /* Espaço interno */
+  border-radius: 10px; /* Cantos arredondados */
+  background-color: #f5f5f5; /* Fundo suave */
+}
+
+.title {
+  font-size: 24px; /* Tamanho do texto */
+  font-weight: bold; /* Texto em negrito */
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 10px; /* Espaço entre o texto e a imagem */
+}
+
+.image-container {
+  display: flex; /* Permite centralizar a imagem */
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+.image-container img {
+  max-width: 100%; /* Faz a imagem caber dentro da caixa */
+  height: auto; /* Mantém proporção */
+  border-radius: 8px; /* Cantos arredondados na imagem */
+}

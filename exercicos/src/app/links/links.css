@@ -1,0 +1,14 @@
+.img-mundial {
+    text-align: center; /* Centraliza a imagem */
+    margin-top: 20px; /* Espaço acima da imagem */
+}
+
+.img-mundial img {
+    max-width: 300px; /* Redimensiona a imagem para caber bem na página */
+    width: 100%; /* Garante que não ultrapassa o container */
+    height: auto; /* Mantém proporção */
+    border: 2px solid black; /* Borda à volta da imagem */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 10px; /* Espaço entre a imagem e a borda */
+    background-color: #f5f5f5; /* Fundo suave atrás da imagem */
+}
