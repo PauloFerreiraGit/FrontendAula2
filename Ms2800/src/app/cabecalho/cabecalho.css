@@ -1,26 +1,20 @@
-.cabecalho-box {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  border: 2px solid #0e0e0f;
-  border-radius: 12px;
-  padding: 16px;
-  background: #0e0e0f;
-  max-width: 600px;
-  margin: 0 auto;
-  align-items: center;
-  flex-direction: column;
+.cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 300px;
+    padding: 15px 20px;
+    background-image: url('BackgroungMs2800.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.cabecalho-logo {
-  width: 120px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: contain;
+.logo {
+    height: 300x;
+    width: auto;
+    object-fit: contain;
 }
 
-.cabecalho-box h1 {
-  margin: 0;
-  font-size: 2rem;
-  color: #eceef1;
-}
+.cabecalho h1 {
+    margin: 0;
+}       
