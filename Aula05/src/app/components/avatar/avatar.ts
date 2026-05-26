@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './avatar.html',
   styleUrl: './avatar.css',
 })
-export class Avatar {}
+export class Avatar {
+  logout() {
+   // throw new Error('Method not implemented.');
+    console.log('deslogou');
+  }
+  nome: string = 'Paulo';
+}
