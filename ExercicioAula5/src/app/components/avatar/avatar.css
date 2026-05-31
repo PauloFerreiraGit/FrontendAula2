@@ -1,0 +1,61 @@
+.avatar-continer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.avatar{
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    /* criando a bolinha    */
+    border-radius: 50%;
+    /* para a imagem não sair da bolinha */
+    background: rgb(1, 4, 11);
+}
+
+.avatar:hover {
+    background: rgba(180, 5, 5, 0.929);
+}
+.name{
+    color: rgba(156, 96, 16, 0.942);
+    font-size: 0.9rem;
+}
+button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5%;
+
+} 
+
+@media (max-width: 768px) {
+    .avatar-continer{
+        gap: 10px;
+    }
+    .avatar{
+        align-items: center;    
+        width: 50px;
+        height: 50px;
+    }
+    .name{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .avatar-continer{
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .avatar{
+        width: 35px;
+        height: 35px;
+    }
+    .name{
+        text-align: center;
+        font-size: 0.7rem;
+    }
+}
