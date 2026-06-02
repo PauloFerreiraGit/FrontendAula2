@@ -1,7 +1,7 @@
 <div class="avatar-container">
-    <img src="avatar.webp" alt="imagem do avatar" class="avatar">
+    <img [src]="this?.localImage ??`avatar.webp`" alt="imagem do avatar" class="avatar">
     <!-- property bind, interpolação -->
-    <span class="name">{{ this.nome}}
+    <span class="name">{{ this.localnome}}</span>
         <!-- evento de click -->
 
         <button (click)="logout()">signout</button>
@@ -9,7 +9,7 @@
         <!-- <button (mouseover)="logout()">test</button> -->
 
 
-    </span>
+    
 
 
 

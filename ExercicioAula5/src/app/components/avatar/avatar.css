@@ -1,61 +1,56 @@
-.avatar-continer{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
+.avatar-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
-.avatar{
-    width: 60px;
-    height: 60px;
-    align-items: center;
-    /* criando a bolinha    */
-    border-radius: 50%;
-    /* para a imagem não sair da bolinha */
-    background: rgb(1, 4, 11);
+.avatar {
+  width: 50px;
+  height: 50px;
+  /* criando a bolinha    */
+  border-radius: 50%;
+  /* para a imagem não sair da bolinha */
+  background: rgba(3, 195, 38, 0.648);
 }
 
 .avatar:hover {
-    background: rgba(180, 5, 5, 0.929);
+  background: rgba(227, 4, 30, 0.941);
 }
-.name{
-    color: rgba(156, 96, 16, 0.942);
-    font-size: 0.9rem;
+.name {
+  color: rgba(7, 242, 58, 0.982);
+  font-size: 1.2rem;
 }
 button {
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5%;
-
-} 
-
-@media (max-width: 768px) {
-    .avatar-continer{
-        gap: 10px;
-    }
-    .avatar{
-        align-items: center;    
-        width: 50px;
-        height: 50px;
-    }
-    .name{
-        font-size: 0.8rem;
-    }
+  padding: 5px 5px;
+  background: rgb(5, 212, 43);
+  cursor: pointer;
+  border-radius: none;
 }
 
+@media (max-width: 768px) {
+    .avatar-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+  }
+  .name {
+    font-size: 0.9rem;
+    flex-direction: column;
+     align-items: center;
+     
+  }
+}
 @media (max-width: 480px) {
-    .avatar-continer{
-        align-items: center;
-        flex-direction: column;
-
-    }
-    .avatar{
-        width: 35px;
-        height: 35px;
-    }
-    .name{
-        text-align: center;
-        font-size: 0.7rem;
-    }
+  .avatar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .avatar {
+    width: 50px;
+    height: 50px;
+  }
+  .name {
+    text-align: center;
+    font-size: 0.8rem;
+  }
 }

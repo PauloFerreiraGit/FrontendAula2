@@ -8,7 +8,8 @@
 })
 export class Avatar {
   
-  nome:string = "Paulo";
+  localnome:string = "Paulo";
+  localImage!:string ;
   //nome2:string = `20`;
   //nome3 = "true";
   
