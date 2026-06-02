@@ -1,0 +1,17 @@
+.main {
+  min-height: 80vh;
+  background: rgba(1, 55, 17, 0.799);
+  flex: 1;
+  padding: 20px;
+}
+@media (max-width: 768px) {
+  .main {
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .main {
+    padding: 10px;
+    text-align: center;
+  }
+}
