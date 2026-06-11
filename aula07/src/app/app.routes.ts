@@ -1,5 +1,5 @@
-import { Variaveis } from './pages/welcome/variaveis/variaveis';
-import { Lacos } from './pages/welcome/lacos/lacos';
+import { Variaveis } from './pages/variaveis/variaveis';
+import { Lacos } from './pages/lacos/lacos';
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
@@ -17,17 +17,17 @@ export const routes: Routes = [
   {
     path: 'ebook/Variaveis',
     loadComponent: () =>
-      import('./pages/welcome/variaveis/variaveis').then((Antonio) => Antonio.Variaveis),
+      import('./pages/variaveis/variaveis').then((Antonio) => Antonio.Variaveis),
   },
   {
     path: 'ebook/operadores',
     loadComponent: () =>
-      import('./pages/welcome/operadores/operadores').then((Artur) => Artur.Operadores),
+      import('./pages/operadores/operadores').then((Artur) => Artur.Operadores),
   },
   {
     path: 'ebook/Estrutura-de-controles',
     loadComponent: () =>
-      import('./pages/welcome/estrutura-de-controles/estrutura-de-controles').then(
+      import('./pages/estrutura-de-controles/estrutura-de-controles').then(
         (Rui) => Rui.EstruturaDeControles,
       ),
   },
