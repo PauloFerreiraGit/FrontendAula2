@@ -1,0 +1,53 @@
+.footer {
+  min-height: 10vh;
+  background: linear-gradient(68.15deg, #029242 0%, #002604 100%);
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  color: rgb(23, 1, 1);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.links {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: rgb(246, 245, 248);
+}
+.links a:\hover {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: rgb(34, 6, 209);
+}
+p {
+  padding: 0.5%;
+  color: rgb(246, 245, 248);
+}
+@media (max-width: 768px) {
+  .footer {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  .footer {
+    height: auto;
+    padding: 10px;
+    flex-direction: column;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .links a{
+    margin:  0;
+  }
+}

@@ -1,14 +1,15 @@
-import { Component, signal, ChangeDetectionStrategy } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Header } from './components/header/header';
-import { Footer } from './components/footer/footer';
-import { Main } from './components/main/main';
+import { Header } from "./components/header/header";
+import { Main } from "./components/main/main";
+import { Footer } from "./components/footer/footer";
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Main, Footer],
+  imports: [ Header, Main, Footer],
   templateUrl: './app.html',
-  changeDetection: ChangeDetectionStrategy.Eager,
-  styleUrl: './app.css',
+  styleUrl: './app.css'
 })
-export class App {}
+export class App {
+  
+}

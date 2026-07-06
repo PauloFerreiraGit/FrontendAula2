@@ -1,10 +1,8 @@
 <div class="avatar-container">
-    <!-- <img src="avatar.png" alt="imagem do avatar" class="avatar"> -->
-    <img src="avatar.webp" class="avatar">
-
-    <!-- Property bind, interpolação  -->
-    <span class="name">{{ this.nome }}</span>
-    <!-- evento de click -->
-    <button (click)="logout()">Singnout</button>
-    <!-- <button (mouseover)="logout()">Singnout</button> -->
+  <img [src]="this?.localImage ??'/img/avatar.png'" alt="Imagem do avatar" class="avatar" />
+  <!-- propertie bind, interpolação -->
+  <span class="name">{{ this.localNome }}</span>
+  <!-- evento de click -->
+  <button (click)="logout()">SignOut</button>
+  <!-- <button (mouseover)="logout()">Test</button> -->
 </div>

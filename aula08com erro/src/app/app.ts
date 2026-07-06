@@ -1,0 +1,14 @@
+import { Component, signal, ChangeDetectionStrategy } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { Header } from './components/header/header';
+import { Footer } from './components/footer/footer';
+import { Main } from './components/main/main';
+
+@Component({
+  selector: 'app-root',
+  imports: [Header, Main, Footer],
+  templateUrl: './app.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
+  styleUrl: './app.css',
+})
+export class App {}
