@@ -38,12 +38,13 @@ export class AssyncTables {
 
   carregarPromisse = () =>{
 this.fakebBack.getUtilizadorPromise().then((res: IUtilizador[]) => {
-  console.log("Nosso Result: " , res)
+  // console.log("Nosso Result: " , res)
   return (this.localUserPromise = res);
 })
 .catch((e) => {
-  console.error("Nosso Error: " , e);
+  // console.error("Nosso Error: " , e);
   this.ErrorPromise = {errorAsync: true, errorNome: "Error no carregarPromise(): " + e};
+  this.localUserPromise = [];
 });
   }
   carregarAsyncAwaitPromise() {
