@@ -3,6 +3,60 @@
     <!--  Tabela Promise -->
     <section class="card">
         <div class="topo">
+            <h2> Promise - Async & Await </h2>
+            <button (click)="this.carregarAsyncAwaitPromise()">Carregar Dados</button>
+        </div>
+
+        <!--  Criando um IF -->
+        @if(ErrorAsyncAwaitPromisse.errorAsync) {
+        <table>
+            <tbody>
+                <tr>
+                    <td class="sem-dados">No Data + {{this.ErrorAsyncAwaitPromisse.errorNome}}</td>
+                </tr>
+            </tbody>
+
+        </table>
+        }@else {
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Idade</th>
+                    <th>Ativo</th>
+                    <th>Salario</th>
+                    <th>Data de Registo</th>
+                    <th>Departamento</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (item of this.localUserAsyncPromise; track item.id) {
+
+                <tr>
+                    <td>{{item.id}}</td>
+                    <td>{{item.email}}</td>
+                    <td>{{item.idade}}</td>
+                    <td>{{item.activo}}</td>
+                    <td>{{item.salario}}</td>
+                    <td>{{item.dataRegistro | date }}</td>
+                    <td>{{item.departamento}}</td>
+
+                </tr>
+
+                }<!--  fim do for -->
+
+
+            </tbody>
+        </table>
+        <!-- //fim do else -->
+
+        }
+
+    </section>
+    <section class="card">
+
+        <div class="topo">
             <h2> Promise -Then / Catch </h2>
             <button (click)="this.carregarPromisse()">Carregar Dados</button>
         </div>
@@ -44,7 +98,7 @@
 
                 </tr>
 
-            }<!--  fim do for -->
+                }<!--  fim do for -->
 
 
             </tbody>
@@ -55,5 +109,118 @@
 
     </section>
     <!--  fim da tabela -->
+
+     <!--  Inicio da tabela de Observable com PipeAsync  -->
+    <section class="card">
+        <div class="topo">
+            <h2>Observable + PipeAsync</h2>
+            <button>Carregar Dados</button>
+        </div>
+
+        @if (this.localUserObservable$ |async ; as utilizadores) {
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Idade</th>
+                    <th>Ativo</th>
+                    <th>Salario</th>
+                    <th>Data de Registo</th>
+                    <th>Departamento</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @for (item of utilizadores; track item.id) {
+                <tr>
+                    <td>{{item.id}}</td>
+                    <td>{{item.email}}</td>
+                    <td>{{item.idade}}</td>
+                    <td>{{item.activo}}</td>
+                    <td>{{item.salario}}</td>
+                    <td>{{item.dataRegistro | date }}</td>
+                    <td>{{item.departamento}}</td>
+
+                </tr>
+
+
+                }
+                <!-- fim do for -->
+               
+            </tbody>
+
+        </table>
+        }
+        <!--  fim do if -->
+       @else {
+        <table>
+            <tbody>
+                <tr>
+                    <td class="sem-dados">Error em carregar Observable com PipeAsync </td>
+                </tr>
+            </tbody>
+        </table>
+       }
+
+
+    </section>
+
+    <!--  Inicio da tabela de Observable com subscriptions  -->
+    
+ <section class="card">
+        <div class="topo">
+            <h2> Observable com Subscribe </h2>
+            <button (click)="this.carregarObservable()">Carregar Dados</button>
+        </div>
+
+        <!--  Criando um IF -->
+        @if(ErrorObservable.errorAsync) {
+        <table>
+            <tbody>
+                <tr>
+                    <td class="sem-dados">No Data + {{this.ErrorObservable.errorNome}}</td>
+                </tr>
+            </tbody>
+
+        </table>
+        }@else {
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Idade</th>
+                    <th>Ativo</th>
+                    <th>Salario</th>
+                    <th>Data de Registo</th>
+                    <th>Departamento</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (item of this.localUserSubscription; track $index) {
+
+                <tr>
+                    <td>{{item.id}}</td>
+                    <td>{{item.email}}</td>
+                    <td>{{item.idade}}</td>
+                    <td>{{item.activo}}</td>
+                    <td>{{item.salario}}</td>
+                    <td>{{item.dataRegistro | date }}</td>
+                    <td>{{item.departamento}}</td>
+
+                </tr>
+
+                }<!--  fim do for -->
+
+
+            </tbody>
+        </table>
+        <!-- //fim do else -->
+
+        }
+
+    </section>
+
 
 </div>
