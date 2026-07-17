@@ -13,7 +13,7 @@ export class AuthFacadeService {
     console.log('Login via AuthFacadeService');
 
     // Aqui chamamos o AuthStateService
-    this.authState.setUser({
+    this.authState.setuser({
       email,
       uid: 'fake-uid',
     } as any);
