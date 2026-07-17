@@ -1,3 +1,4 @@
+import { User } from 'firebase/auth';
 import { AuthFacadeService } from './service/auth-facade.service';
 import { Component, OnInit, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
@@ -22,13 +23,18 @@ export class App implements OnInit{
   
   ngOnInit(): void {
     this.AuthStateService.initAuthListener();
-    
+
+    /** Forma de testar se temos dados */
+    this.AuthStateService.getUser().subscribe((user: any) => {
+    console.log("dados do google Auth:", user);
+    });
+  }
   }
 
 
   
     
-  } 
+  
 
   
 

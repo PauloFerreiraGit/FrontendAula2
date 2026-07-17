@@ -1,7 +1,7 @@
 
 import { BehaviorSubject, catchError, from, Observable, tap,throwError} from 'rxjs';
 import { FirebaseService } from './firebase';
-import { EnvironmentInjector,inject,Inject, Injectable, runInInjectionContext } from '@angular/core';
+import { EnvironmentInjector,inject,Inject, Injectable, InjectionToken, runInInjectionContext } from '@angular/core';
 import { User,AuthError, GoogleAuthProvider,onAuthStateChanged,signInWithPopup } from 'firebase/auth';
 import { Router } from '@angular/router';
 
@@ -19,7 +19,7 @@ export class AuthStateService {
 
   private auth = inject(FirebaseService).auth;
   private EnvironmentInjector = inject(EnvironmentInjector);
-  private routes = inject(Router);
+  private routes = Inject(Router);
   /// este é um observable do tipo Hot
   private user$ = new BehaviorSubject<User | null>(null);
 

@@ -15,11 +15,12 @@ export class Forms {
 
   /**Variavel para receber criar Formulario e capturar os dados */
   protected signInForms: UntypedFormGroup;
+path: any;
 
   
 
   constructor(
-    ///protected authService: AuthStateService,
+    protected authService: AuthStateService,
     protected router: Router,
     private fb: UntypedFormBuilder,
   ) {
@@ -27,6 +28,8 @@ export class Forms {
       email: ["",[Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(10)]],
     });
+     /** O controls é a api do form que controla os validators e tb os dados */
+    console.log("nosso controls: ", this.signInForms.controls);
   } //end construtor
 
 

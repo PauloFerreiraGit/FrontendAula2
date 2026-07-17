@@ -5,7 +5,7 @@ export const environment = {
   production: false,
 
   firebaseConfig: {
-    apikey: Keys.apiKey,
+  apiKey: Keys.apiKey,
   authDomain: "frontendcinel-paulo.firebaseapp.com",
   projectId: "frontendcinel-paulo",
   storageBucket: "frontendcinel-paulo.firebasestorage.app",
